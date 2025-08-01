@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Video Kuliner dan Objek Wisata Bali</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    header {
+      background-color: #1e293b;
+      padding: 20px 0;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .brand {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #38bdf8;
+    }
+
+    main.container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1rem;
+      color: #475569;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .video-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      display: block;
+      border: none;
+    }
+
+    .video-card h2 {
+      padding: 15px 20px 5px;
+      font-size: 1.2rem;
+      color: #0f172a;
+    }
+
+    .video-card p {
+      padding: 0 20px 20px;
+      color: #475569;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .video-card iframe {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner" class="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand" aria-label="Im@ homepage">BALI - DENPASAR</a>
+      <nav role="navigation" aria-label="Primary navigation" class="nav">
+        <a href="Profile.html" class="nav-link" tabindex="0">Profile</a>
+        <a href="foto.html" class="nav-link" tabindex="0">Foto</a>
+        <a href="video.html" class="nav-link" tabindex="0">Video</a>
+        <a href="berita.html" class="nav-link" tabindex="0">Berita</a>
+        <a href="about.html" class="nav-link" tabindex="0">About</a>
+        <a href="#" class="nav-link" tabindex="0">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main" aria-label="Galeri Video">
+    <h1>TEMPAT KULINER DAN OBJEK WISATA</h1>
+    <p class="description">
+      Kumpulan video tempat kuliner dan objek wisata.
+    </p>
+
+    <section class="gallery-grid">
+
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/LLQo7Pm24mM" title="Nasi campur" allowfullscreen></iframe>
+        <h2>Nasi Campur</h2>
+        <p>Nasi Campur Bali merupakan campuran nasi dengan berbagai macam lauk pauk seperti ayam, telur sayuran dan juga sate lilit yang biasanya terbuat dari ikan atau ayam. Lauk ayam yang 
+          digunakan juga merupakan ayam yang dipanggang dengan bumbu Bali serta dengan cita rasanya yang gurih..</p>
+      </article>
+
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/WfmkeWUYI0E" title="Seafood" allowfullscreen></iframe>
+        <h2>Seafood</h2>
+        <p>Seafood adalah bagian penting dari kuliner Bali, meskipun bukan makanan khas Bali asli. Ikan bakar Jimbaran, dengan bumbu khasnya, adalah salah satu hidangan yang sangat populer. 
+          Selain itu, berbagai jenis olahan seafood lainnya seperti ikan goreng, sate lilit ikan, dan sop kepala ikan juga banyak ditemukan dan digemari. .</p>
+      </article>
+
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/zWEXvWP6MAU" title="Ayam Betutu" allowfullscreen></iframe>
+        <h2>Ayam Betutu</h2>
+        <p>Ayam betutu adalah hidangan ayam khas Bali yang terkenal dengan bumbu rempahnya yang kaya dan pedas. Ayam utuh dimasak dengan bumbu yang disebut "base genep" dan dimasak dalam sekam 
+          atau dipanggang hingga empuk. Hidangan ini sering disajikan dalam acara-acara khusus, tetapi juga populer sebagai hidangan sehari-hari. 
+</p>
+      </article>
+
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/WIq987ZVbQ4" title="Pantai Pandawa" allowfullscreen></iframe>
+        <h2>Pantai Pandawa</h2>
+        <p>Pantai Pandawa adalah pantai yang terletak di balik perbukitan di Desa Kutuh, Kuta Selatan, Badung, Bali. 
+          Dikenal juga sebagai "Secret Beach", pantai ini menawarkan pasir putih yang bersih, air laut jernih, 
+          dan pemandangan tebing kapur yang dipahat patung-patung tokoh pewayangan Pandawa..</p>
+      </article>
+
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/Ea6rDSsFJYY?si=ga9jSv0hZeHUke69" title="Gunung Batur" allowfullscreen></iframe>
+        <h2>Gunung Batur</h2>
+        <p> Kintamani bali - memiliki pemandangan indah Gunung Batur dan Danau Batur, Kaldera terbesar di dunia. 
+          Selain melihat pemandangan dari desa penelokan, banyak wisatawan datang ke bali untuk mendaki di Gunung Batur dengan ketinggian 1717 MDPL. </p>
+      </article>
+
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/LiZyW6JKaMk?si=S56CQrCjZNTHmG-T" title="Air terjun Tegenungan Waterfall" allowfullscreen></iframe>
+        <h2>Air terjun Tegenungan Waterfall</h2>
+        <p>Bali - Air terjun Tegenungan menjadi salah satu air terjun paling hits di bali selatan, Tegenungan Waterfall atau sering juga disebut Blangsinga Waterfall. 
+          Lokasi nya berada di desa Kemenuh, Kecamatan Sukawati Gianyar Bali, Hanya 5 menit dari Pasar Sukawawati dan 20 Menit dari Kota Denpasar dan Ubud Ubud. </p>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>

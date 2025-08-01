@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identitas Tim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        /* Reset dan Font */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1e293b;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+        }
+
+        .container.header-container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #38bdf8;
+        }
+
+        .team-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .team-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .team-card {
+            background-color: #334155;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #38bdf8;
+        }
+
+        .team-card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+        }
+
+        .team-card p {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            .team-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        .penutup {
+            margin-top: 60px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .penutup h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .penutup p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="brand" aria-label="Im@ homepage">BALI - DENPASAR</a>
+            <nav class="nav" role="navigation" aria-label="Primary navigation">
+                <a href="Profile.html" class="nav-link" tabindex="0">Profile</a>
+                <a href="foto.html" class="nav-link" tabindex="0">Foto</a>
+                <a href="video.html" class="nav-link" tabindex="0">Video</a>
+                <a href="berita.html" class="nav-link" tabindex="0">Berita</a>
+                <a href="about.html" class="nav-link" tabindex="0">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="team-container">
+        <h1 class="team-title">Identitas Tim</h1>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="mountai.jpeg" alt="Foto Indentitas">
+                <h3>Mirsah</h3>
+                <p>2459201086<br>2B</p>
+                <p>082373240010</p>
+                <p>Kota Alam, Gg. Sutan Nimbang Raja III No. 17</p>
+            </div>
+            <div class="team-card">
+                <img src="agnes.jpg" alt="Foto Indentitas">
+                <h3>Agnes Pebiola</h3>
+                <p>2459201122<br>2B</p>
+                <p>083890813056</p>
+                <p>Sindang Sari, Jln Jimat Ratu</p>
+            </div>
+            <div class="team-card">
+                <img src="sifa.jpg" alt="Foto Indentitas">
+                <h3>Shifa Kumala Dewi</h3>
+                <p>2459201120<br>2B</p>
+                <p>085788774019</p>
+                <p>Bumi Agung, Jln Remanggis</p>
+            </div>
+        </div>
+
+        <section class="penutup">
+            <h2>Kata Penutup</h2>
+            <p>"Setelah melewati berbagai proses pembelajaran dan tantangan Ujian Akhir Semester (UAS), kami sebagai tim menyampaikan rasa syukur dan bangga atas kerja sama dan semangat yang telah terjalin. Proyek ini menjadi bukti nyata dari kolaborasi, dedikasi, serta kemampuan kami dalam mengaplikasikan ilmu yang telah dipelajari."</p>
+            <p>"Kami menyadari bahwa hasil ini bukanlah akhir, melainkan langkah awal menuju perkembangan dan pembelajaran yang lebih baik ke depannya. Terima kasih kepada Dosen, teman-teman, dan semua pihak yang telah mendukung tercapainya proyek ini."</p>
+            <p>"Semoga karya ini dapat memberikan manfaat serta menjadi inspirasi bagi siapa pun yang ingin belajar dan berkembang di bidang sistem teknologi dan informasi."</p>
+        </section>
+    </main>
+</body>
+</html>
